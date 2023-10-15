@@ -4,6 +4,7 @@ import Login from './Components/Login'
 import Header from './Components/Header'
 import './App.css'
 import Home from './Components/Home'
+import Detail from './Components/Detail'
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Routes>
           <Route exact path='/' element={<Login />}  />
           <Route path='/home' element={<Home />}  />
+          <Route path='/details/:id' element={<Detail />}  />
 
         </Routes>
       </Router>
@@ -24,5 +26,7 @@ function App() {
     </>
   )
 }
+
+
 
 export default App
