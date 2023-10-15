@@ -64,6 +64,7 @@ const Detail = (props) => {
 
                 <Description>
                 {detailData.description}
+                
                 </Description>
             </ContentMeta>
 
