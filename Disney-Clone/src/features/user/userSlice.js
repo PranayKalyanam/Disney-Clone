@@ -1,5 +1,6 @@
 //This will go to Header.jsx
 // And will go to Store.js
+//And will go to Home.jsx
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
@@ -31,7 +32,7 @@ const userSlice = createSlice({
 export const {setUserLoginDetails, setSignOutSate} = userSlice.actions;
 
 export const selectUserName = (state) => state.name;
-export const selectUserEmail = (state) => state.user.email;
+export const selectUserEmail = (state) => state.email;
 export const selectUserPhoto = (state) => state.photo;
 
 export default userSlice.reducer

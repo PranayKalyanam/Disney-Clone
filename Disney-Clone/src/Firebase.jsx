@@ -1,6 +1,7 @@
 // This will go to Header
+//This will go to Home.jsx
 import { initializeApp } from 'firebase/app';
-// import { getFirestore } from "firebase/firestore";
+import { getFirestore } from "firebase/firestore";
 import { getAuth } from "firebase/auth";
 import { GoogleAuthProvider } from "firebase/auth";
 import { getStorage } from "firebase/storage";
@@ -16,11 +17,11 @@ const firebaseConfig = {
   };
 
   const firebaseApp = initializeApp(firebaseConfig);
-//   const db = getFirestore(firebaseApp);
+  const db = getFirestore(firebaseApp);
   const auth = getAuth(firebaseApp);
   const provider = new GoogleAuthProvider();
   const storage = getStorage(firebaseApp);
 
   export {auth, provider, storage };
 
-//   export default db;
+  export default db;
